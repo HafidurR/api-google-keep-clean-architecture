@@ -20,10 +20,10 @@ type Config struct {
 
 func Get() Config {
 	return Config{
-		Port				: os.Getenv("DBHOST"),
-		Username		: os.Getenv("DB_USERNAME"),
-		Password		: os.Getenv("DB_PASSWORD"),
-		DatabaseName: os.Getenv("DATABASE_NAME"),
-		Host				: os.Getenv("DB_HOST"),
+		Port				: os.Getenv(Port),
+		Username		: os.Getenv(Username),
+		Password		: os.Getenv(Password),
+		DatabaseName: os.Getenv(DatabaseName),
+		Host				: os.Getenv(Host),
 	}
 }
